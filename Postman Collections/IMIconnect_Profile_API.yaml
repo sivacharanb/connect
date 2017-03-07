@@ -1,0 +1,715 @@
+swagger: 2.0
+info:
+  version: 1.0
+  title: IMIconnect Profile API
+  description: profile api after beehyv and product team changes
+  license:
+    name: MIT
+    url: http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT
+host: example.com
+basePath: /
+schemes:
+- http
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /resources/v1/customerprofile:
+    get:
+      description: 'TODO: Add Description'
+      tags:
+      - Misc
+      operationId: Get Profile - Bulk
+      produces:
+      - application/json
+      parameters:
+      - name: customerId
+        in: query
+        required: true
+        type: integer
+        format: int32
+      - name: customerId
+        in: query
+        required: true
+        type: integer
+        format: int32
+      - name: key
+        in: header
+        required: true
+        type: string
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /resources/v1/customerprofile?customerId=4&customerId=100077
+          headers:
+            key: 6ec2cc03-1d28-4b56-9ecd-42e44c8678410
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Get Profile - Bulk
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    put:
+      description: 'TODO: Add Description'
+      tags:
+      - Misc
+      operationId: Update Profile
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/UpdateProfilerequest'
+      - name: key
+        in: header
+        required: true
+        type: string
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: PUT
+          uri: /resources/v1/customerprofile
+          headers:
+            Content-Type: application/json
+            key: 6ec2cc03-1d28-4b56-9ecd-42e44c8678410
+          body: "{\r\n   \"Records\":[\r\n      {\r\n         \r\n       \"customerId\":\"100077\",\r\n        \"Attributes\":{\r\n       \"name\": \"vijay akula\", //optional\r\n       \"email\": \"vijay.akula@imimobile.com\",//optional\r\n       \"msisdn\": \"919676534531\",//optional\r\n       \"city\":\"Hyderabad\",//optional\r\n      \"country\":\"India\",//optional\r\n      \"accountId\":\"100077\",//optional\r\n      \"clientId\":\"OHDevSanity\"//optional\r\n       \r\n         }\r\n      }, \r\n      \r\n      \r\n      {\r\n         \"customerId\":\"4\",\r\n       \r\n         \"Attributes\":{\r\n       \"name\": \"Mahesh Pavan\",\r\n       \"email\": \"pavankumar.g@imimobile.com\",\r\n       \"msisdn\": \"919703553010\",\r\n       \"city\":\"Hyderabad\",\r\n       \"country\":\"India\",\r\n       \"accountId\":\"100077\",\r\n       \"clientId\":\"OHDevSanity\"\r\n       \r\n         }\r\n      }\r\n   ]\r\n}"
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Update Profile
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: 'TODO: Add Description'
+      tags:
+      - Misc
+      operationId: Create Profile
+      produces:
+      - application/json
+      parameters:
+      - name: key
+        in: header
+        required: true
+        type: string
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: POST
+          uri: /resources/v1/customerprofile
+          headers:
+            key: 6ec2cc03-1d28-4b56-9ecd-42e44c8678410
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Create Profile
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    delete:
+      description: 'TODO: Add Description'
+      tags:
+      - Misc
+      operationId: Profile-Delete-Multiple
+      produces:
+      - application/json
+      parameters:
+      - name: customerId
+        in: query
+        required: true
+        type: integer
+        format: int32
+      - name: customerId
+        in: query
+        required: true
+        type: integer
+        format: int32
+      - name: key
+        in: header
+        required: true
+        type: string
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: DELETE
+          uri: /resources/v1/customerprofile?customerId=4545&customerId=7878
+          headers:
+            key: 6ec2cc03-1d28-4b56-9ecd-42e44c8678410
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Profile-Delete-Multiple
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /resources/v1/customerappprofile/a_635840479228873065/:
+    post:
+      description: 'TODO: Add Description'
+      tags:
+      - Misc
+      operationId: Create App Profile
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/CreateAppProfilerequest'
+      - name: key
+        in: header
+        required: true
+        type: string
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: POST
+          uri: /resources/v1/customerappprofile/a_635840479228873065/
+          headers:
+            Content-Type: application/json
+            key: 6ec2cc03-1d28-4b56-9ecd-42e44c8678410
+          body: "{\r\n   \"Records\":[\r\n      \r\n    {\r\n         //Facebook App profile \r\n         \"customerId\":\"100077\",\r\n         \"Attributes\":{\r\n         \r\n              \"fb_user_id\":\"1027581030637981\", //mandatory\r\n              \"fb_conversation_id\": \"t_mid.1453704265532:e9228e75c730b38079\",\r\n              \"status\": \"1\",//madatory\r\n              \"fbstatus\":\"1\", //optional\r\n              \"fbcstatus\":\"1\", //optional\r\n              \"verified\":\"1\",//optional\r\n              \"access_token\":\"CAAMRVlEvpz0BAGPrZAcxNJP6erVMODjWDI5zANTKuDXrKoJlzXH7hNcMkAqrCkPmLshmYfTO6ozpkEmGQeai3KEltbZBay3HygIBPhrj6qcojZBgD6qHROEJpz2taeeDs5DCGZCHPeVHRmIZCCWjP3BzeIVS7U81RdsHZAC0jbHQTDPu6j7Y1wJUj6pVRPhs4SnAdezGxAsQZDZD\",//optional\r\n              \"access_token_expiry\":\"5168517\",//optional\r\n              \"name\":\"Vijay Akula\",//optional\r\n              \"first_name\":\"Vijay\",//optional\r\n              \"middle_name\":\"\",//optional\r\n              \"last_name\":\"Akula\",//optional\r\n              \"gender\":\"male\",//optional\r\n              \"email\":\"vijaykumar5c1@gmail.com\",//optional\r\n              \"location\":\"102.0000,454.788\",//optional\r\n              \"birthday\":\"\"//optional\r\n\r\n\r\n         }\r\n      }     \r\n      \r\n      \r\n    //   //Twitter App Profile\r\n    //   {\r\n    //      \"customerId\":\"100077\",\r\n    //      \"Attributes\":{\r\n    //             \"twitter_user_id\":\"357282265\", //mandatory\r\n    //             \"status\": \"1\", //mandatory\r\n    //             \"verified\": \"1\", //optional\r\n    //             \"access_token\":\"\", //optional\r\n    //             \"access_tokensecret\":\"\",//optional\r\n    //             \"screenName\":\"vijaykumar5c1\", //optional\r\n    //             \"geolocation\":\"\",//optional\r\n    //             \"timezone\":\"Hawaii\"//optional\r\n\r\n    //      }\r\n    //   }\r\n      \r\n      \r\n      \r\n   ]\r\n}\r\n\r\n"
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Create App Profile
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /resources/v1/customerprofile/5d730b72-f3ba-4250-a1d0-3f7fd0b5d962/:
+    get:
+      description: 'TODO: Add Description'
+      tags:
+      - Misc
+      operationId: Get Profile
+      produces:
+      - application/json
+      parameters:
+      - name: key
+        in: header
+        required: true
+        type: string
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /resources/v1/customerprofile/5d730b72-f3ba-4250-a1d0-3f7fd0b5d962/
+          headers:
+            key: 6ec2cc03-1d28-4b56-9ecd-42e44c8678410
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Get Profile
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /resources/v1/customerappprofile/a_635852551475226245/100077:
+    get:
+      description: 'TODO: Add Description'
+      tags:
+      - Misc
+      operationId: Get App Profile
+      produces:
+      - application/json
+      parameters:
+      - name: key
+        in: header
+        required: true
+        type: string
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /resources/v1/customerappprofile/a_635852551475226245/100077
+          headers:
+            key: 6ec2cc03-1d28-4b56-9ecd-42e44c8678410
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Get App Profile
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /resources/v1/customerappprofile/a_635852560539605550:
+    put:
+      description: 'TODO: Add Description'
+      tags:
+      - Misc
+      operationId: Update App Profile
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/UpdateAppProfilerequest'
+      - name: key
+        in: header
+        required: true
+        type: string
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: PUT
+          uri: /resources/v1/customerappprofile/a_635852560539605550
+          headers:
+            Content-Type: application/json
+            key: 6ec2cc03-1d28-4b56-9ecd-42e44c8678410
+          body: "{\r\n   \"Records\":[\r\n\r\n    //   {\r\n    //      //Facebook App profile \r\n    //      \"customerId\":\"100077\",\r\n    //      \"Attributes\":{\r\n         \r\n    //           \"fb_user_id\":\"1027581030637981\", //mandatory\r\n    //           \"fb_conversation_id\": \"t_mid.1453704265532:e9228e75c730b38079\",\r\n    //           \"status\": \"1\",//madatory\r\n    //           \"fbstatus\":\"1\", //optional\r\n    //           \"fbcstatus\":\"1\", //optional\r\n    //           \"verified\":\"1\",//optional\r\n    //           \"access_token\":\"CAAMRVlEvpz0BAGPrZAcxNJP6erVMODjWDI5zANTKuDXrKoJlzXH7hNcMkAqrCkPmLshmYfTO6ozpkEmGQeai3KEltbZBay3HygIBPhrj6qcojZBgD6qHROEJpz2taeeDs5DCGZCHPeVHRmIZCCWjP3BzeIVS7U81RdsHZAC0jbHQTDPu6j7Y1wJUj6pVRPhs4SnAdezGxAsQZDZD\",//optional\r\n    //           \"access_token_expiry\":\"5168517\",//optional\r\n    //           \"name\":\"Vijay Akula\",//optional\r\n    //           \"first_name\":\"Vijay\",//optional\r\n    //           \"middle_name\":\"\",//optional\r\n    //           \"last_name\":\"Akula\",//optional\r\n    //           \"gender\":\"male\",//optional\r\n    //           \"email\":\"vijaykumar5c1@gmail.com\",//optional\r\n    //           \"location\":\"102.0000,454.788\",//optional\r\n    //           \"birthday\":\"\"//optional\r\n\r\n\r\n    //      }\r\n    //   }     \r\n      \r\n      \r\n      //Twitter App Profile\r\n      {\r\n         \"customerId\":\"100077\",\r\n         \"Attributes\":{\r\n                \"twitter_user_id\":\"357282265\", //mandatory\r\n                \"status\": \"1\", //mandatory\r\n                \"verified\": \"1\", //optional\r\n                \"access_token\":\"\", //optional\r\n                \"access_tokensecret\":\"\",//optional\r\n                \"screenName\":\"vijaykumar5c1\", //optional\r\n                \"geolocation\":\"\",//optional\r\n                \"timezone\":\"Hawaii\"//optional\r\n\r\n         }\r\n      }\r\n      \r\n      \r\n      \r\n      \r\n   ]\r\n}"
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Update App Profile
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /resources/v1/customerprofile/7878:
+    delete:
+      description: 'TODO: Add Description'
+      tags:
+      - Misc
+      operationId: Delete Profile
+      produces:
+      - application/json
+      parameters:
+      - name: showinwardlinks
+        in: query
+        required: true
+        type: integer
+        format: int32
+      - name: key
+        in: header
+        required: true
+        type: string
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: DELETE
+          uri: /resources/v1/customerprofile/7878?showinwardlinks=2
+          headers:
+            key: 6ec2cc03-1d28-4b56-9ecd-42e44c8678410
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Delete Profile
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /resources/v1/customerappprofile/a_635845757632550116/2106:
+    delete:
+      description: 'TODO: Add Description'
+      tags:
+      - Misc
+      operationId: Delete App Profile
+      produces:
+      - application/json
+      parameters:
+      - name: key
+        in: header
+        required: true
+        type: string
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: DELETE
+          uri: /resources/v1/customerappprofile/a_635845757632550116/2106
+          headers:
+            key: 6ec2cc03-1d28-4b56-9ecd-42e44c8678410
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Delete App Profile
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /resources/v1/customerappprofile/a_635852551475226245:
+    get:
+      description: 'TODO: Add Description'
+      tags:
+      - Misc
+      operationId: Get App Profile - Bulk
+      produces:
+      - application/json
+      parameters:
+      - name: customerId
+        in: query
+        required: true
+        type: integer
+        format: int32
+      - name: customerId
+        in: query
+        required: true
+        type: integer
+        format: int32
+      - name: key
+        in: header
+        required: true
+        type: string
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /resources/v1/customerappprofile/a_635852551475226245?customerId=4545&customerId=7878
+          headers:
+            key: 6ec2cc03-1d28-4b56-9ecd-42e44c8678410
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Get App Profile - Bulk
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /resources/v1/customerappprofile/a_635840479228873065:
+    delete:
+      description: 'TODO: Add Description'
+      tags:
+      - Misc
+      operationId: Get App Profile - Multiple
+      produces:
+      - application/json
+      parameters:
+      - name: customerId
+        in: query
+        required: true
+        type: integer
+        format: int32
+      - name: key
+        in: header
+        required: true
+        type: string
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: DELETE
+          uri: /resources/v1/customerappprofile/a_635840479228873065?customerId=2134
+          headers:
+            key: 6ec2cc03-1d28-4b56-9ecd-42e44c8678410
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Get App Profile - Multiple
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+definitions:
+  CreateAppProfilerequest:
+    title: Create App ProfileRequest
+    type: object
+    properties:
+      Records:
+        type: array
+        items:
+          $ref: '#/definitions/Record'
+    required:
+    - Records
+  Record:
+    title: Record
+    type: object
+    properties:
+      customerId:
+        type: string
+      Attributes:
+        $ref: '#/definitions/Attributes'
+    required:
+    - customerId
+    - Attributes
+  Attributes:
+    title: Attributes
+    type: object
+    properties:
+      fb_user_id:
+        type: string
+      fb_conversation_id:
+        type: string
+      status:
+        type: string
+      fbstatus:
+        type: string
+      fbcstatus:
+        type: string
+      verified:
+        type: string
+      access_token:
+        type: string
+      access_token_expiry:
+        type: string
+      name:
+        type: string
+      first_name:
+        type: string
+      middle_name:
+        type: string
+      last_name:
+        type: string
+      gender:
+        type: string
+      email:
+        type: string
+      location:
+        type: string
+      birthday:
+        type: string
+    required:
+    - fb_user_id
+    - fb_conversation_id
+    - status
+    - fbstatus
+    - fbcstatus
+    - verified
+    - access_token
+    - access_token_expiry
+    - name
+    - first_name
+    - middle_name
+    - last_name
+    - gender
+    - email
+    - location
+    - birthday
+  UpdateProfilerequest:
+    title: Update ProfileRequest
+    type: object
+    properties:
+      Records:
+        type: array
+        items:
+          $ref: '#/definitions/Record4'
+    required:
+    - Records
+  Record4:
+    title: Record4
+    type: object
+    properties:
+      customerId:
+        type: string
+      Attributes:
+        $ref: '#/definitions/Attributes5'
+    required:
+    - customerId
+    - Attributes
+  Attributes5:
+    title: Attributes5
+    type: object
+    properties:
+      name:
+        type: string
+      email:
+        type: string
+      msisdn:
+        type: string
+      city:
+        type: string
+      country:
+        type: string
+      accountId:
+        type: string
+      clientId:
+        type: string
+    required:
+    - name
+    - email
+    - msisdn
+    - city
+    - country
+    - accountId
+    - clientId
+  UpdateAppProfilerequest:
+    title: Update App ProfileRequest
+    type: object
+    properties:
+      Records:
+        type: array
+        items:
+          $ref: '#/definitions/Record7'
+    required:
+    - Records
+  Record7:
+    title: Record7
+    type: object
+    properties:
+      customerId:
+        type: string
+      Attributes:
+        $ref: '#/definitions/Attributes8'
+    required:
+    - customerId
+    - Attributes
+  Attributes8:
+    title: Attributes8
+    type: object
+    properties:
+      twitter_user_id:
+        type: string
+      status:
+        type: string
+      verified:
+        type: string
+      access_token:
+        type: string
+      access_tokensecret:
+        type: string
+      screenName:
+        type: string
+      geolocation:
+        type: string
+      timezone:
+        type: string
+    required:
+    - twitter_user_id
+    - status
+    - verified
+    - access_token
+    - access_tokensecret
+    - screenName
+    - geolocation
+    - timezone
