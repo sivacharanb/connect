@@ -7,7 +7,7 @@ info:
     name: MIT
     url: http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT
 host: example.com
-basePath: /
+basePath: ''
 schemes:
 - http
 consumes:
