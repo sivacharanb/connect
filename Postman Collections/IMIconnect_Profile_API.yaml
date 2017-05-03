@@ -623,7 +623,6 @@ definitions:
         description: ''
         type: string
       Attributes:
-        description: ''
         $ref: '#/definitions/Attributes'
     required:
     - customerId
@@ -716,7 +715,6 @@ definitions:
         description: ''
         type: string
       Attributes:
-        description: ''
         $ref: '#/definitions/Attributes5'
     required:
     - customerId
@@ -773,7 +771,6 @@ definitions:
         description: ''
         type: string
       Attributes:
-        description: ''
         $ref: '#/definitions/Attributes8'
     required:
     - customerId
