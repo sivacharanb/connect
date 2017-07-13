@@ -606,6 +606,26 @@ paths:
 definitions:
   CreateAppProfilerequest:
     title: Create App ProfileRequest
+    example:
+      Records:
+      - customerId: 100077
+        Attributes:
+          fb_user_id: 1027581030637981
+          fb_conversation_id: t_mid.1453704265532:e9228e75c730b38079
+          status: 1
+          fbstatus: 1
+          fbcstatus: 1
+          verified: 1
+          access_token: CAAMRVlEvpz0BAGPrZAcxNJP6erVMODjWDI5zANTKuDXrKoJlzXH7hNcMkAqrCkPmLshmYfTO6ozpkEmGQeai3KEltbZBay3HygIBPhrj6qcojZBgD6qHROEJpz2taeeDs5DCGZCHPeVHRmIZCCWjP3BzeIVS7U81RdsHZAC0jbHQTDPu6j7Y1wJUj6pVRPhs4SnAdezGxAsQZDZD
+          access_token_expiry: 5168517
+          name: Vijay Akula
+          first_name: Vijay
+          middle_name: ''
+          last_name: Akula
+          gender: male
+          email: vijaykumar5c1@gmail.com
+          location: 102.0000,454.788
+          birthday: ''
     type: object
     properties:
       Records:
@@ -698,6 +718,26 @@ definitions:
     - birthday
   UpdateProfilerequest:
     title: Update ProfileRequest
+    example:
+      Records:
+      - customerId: 100077
+        Attributes:
+          name: vijay akula
+          email: vijay.akula@imimobile.com
+          msisdn: 919676534531
+          city: Hyderabad
+          country: India
+          accountId: 100077
+          clientId: OHDevSanity
+      - customerId: 4
+        Attributes:
+          name: Mahesh Pavan
+          email: pavankumar.g@imimobile.com
+          msisdn: 919703553010
+          city: Hyderabad
+          country: India
+          accountId: 100077
+          clientId: OHDevSanity
     type: object
     properties:
       Records:
@@ -754,6 +794,18 @@ definitions:
     - clientId
   UpdateAppProfilerequest:
     title: Update App ProfileRequest
+    example:
+      Records:
+      - customerId: 100077
+        Attributes:
+          twitter_user_id: 357282265
+          status: 1
+          verified: 1
+          access_token: ''
+          access_tokensecret: ''
+          screenName: vijaykumar5c1
+          geolocation: ''
+          timezone: Hawaii
     type: object
     properties:
       Records:
