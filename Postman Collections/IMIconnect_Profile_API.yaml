@@ -17,7 +17,7 @@ produces:
 paths:
   /customerprofile:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Get Profile - Bulk
       tags:
       - Misc
@@ -62,14 +62,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Get Profile - Bulk
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Update Profile
       tags:
       - Misc
@@ -115,14 +115,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Update Profile
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Create Profile
       tags:
       - Misc
@@ -161,14 +161,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Create Profile
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     delete:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Profile-Delete-Multiple
       tags:
       - Misc
@@ -213,7 +213,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Profile-Delete-Multiple
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -221,7 +221,7 @@ paths:
         IsMultiContentStreaming: false
   /a_635840479228873065/:
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Create App Profile
       tags:
       - Misc
@@ -267,7 +267,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Create App Profile
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -275,7 +275,7 @@ paths:
         IsMultiContentStreaming: false
   /customerprofile/5d730b72-f3ba-4250-a1d0-3f7fd0b5d962/:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Get Profile
       tags:
       - Misc
@@ -314,7 +314,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Get Profile
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -322,7 +322,7 @@ paths:
         IsMultiContentStreaming: false
   /a_635852551475226245/100077:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Get App Profile
       tags:
       - Misc
@@ -355,7 +355,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Get App Profile
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -363,7 +363,7 @@ paths:
         IsMultiContentStreaming: false
   /a_635852560539605550:
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Update App Profile
       tags:
       - Misc
@@ -409,7 +409,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Update App Profile
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -417,7 +417,7 @@ paths:
         IsMultiContentStreaming: false
   /customerprofile/7878:
     delete:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Delete Profile
       tags:
       - Misc
@@ -462,7 +462,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Delete Profile
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -470,7 +470,7 @@ paths:
         IsMultiContentStreaming: false
   /a_635845757632550116/2106:
     delete:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Delete App Profile
       tags:
       - Misc
@@ -503,7 +503,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Delete App Profile
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -511,7 +511,7 @@ paths:
         IsMultiContentStreaming: false
   /a_635852551475226245:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Get App Profile - Bulk
       tags:
       - Misc
@@ -550,7 +550,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Get App Profile - Bulk
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -558,7 +558,7 @@ paths:
         IsMultiContentStreaming: false
   /a_635840479228873065:
     delete:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Get App Profile - Multiple
       tags:
       - Misc
@@ -597,7 +597,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Get App Profile - Multiple
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
