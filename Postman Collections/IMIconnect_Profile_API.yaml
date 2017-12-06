@@ -21,7 +21,7 @@ paths:
       summary: Get Profile - Bulk
       tags:
       - Misc
-      operationId: Get Profile - Bulk
+      operationId: CustomerprofileGet
       produces:
       - application/json
       parameters:
@@ -73,7 +73,7 @@ paths:
       summary: Update Profile
       tags:
       - Misc
-      operationId: Update Profile
+      operationId: CustomerprofilePut
       produces:
       - application/json
       parameters:
@@ -126,7 +126,7 @@ paths:
       summary: Create Profile
       tags:
       - Misc
-      operationId: Create Profile
+      operationId: CustomerprofilePost
       produces:
       - application/json
       parameters:
@@ -172,7 +172,7 @@ paths:
       summary: Profile-Delete-Multiple
       tags:
       - Misc
-      operationId: Profile-Delete-Multiple
+      operationId: CustomerprofileDelete
       produces:
       - application/json
       parameters:
@@ -225,7 +225,7 @@ paths:
       summary: Create App Profile
       tags:
       - Misc
-      operationId: Create App Profile
+      operationId: A635840479228873065Post
       produces:
       - application/json
       parameters:
@@ -279,7 +279,7 @@ paths:
       summary: Get Profile
       tags:
       - Misc
-      operationId: Get Profile
+      operationId: Customerprofile5d730b72F3ba4250A1d03f7fd0b5d962Get
       produces:
       - application/json
       parameters:
@@ -326,7 +326,7 @@ paths:
       summary: Get App Profile
       tags:
       - Misc
-      operationId: Get App Profile
+      operationId: A635852551475226245100077Get
       produces:
       - application/json
       parameters:
@@ -367,7 +367,7 @@ paths:
       summary: Update App Profile
       tags:
       - Misc
-      operationId: Update App Profile
+      operationId: A635852560539605550Put
       produces:
       - application/json
       parameters:
@@ -421,7 +421,7 @@ paths:
       summary: Delete Profile
       tags:
       - Misc
-      operationId: Delete Profile
+      operationId: Customerprofile7878Delete
       produces:
       - application/json
       parameters:
@@ -474,7 +474,7 @@ paths:
       summary: Delete App Profile
       tags:
       - Misc
-      operationId: Delete App Profile
+      operationId: A6358457576325501162106Delete
       produces:
       - application/json
       parameters:
@@ -515,7 +515,7 @@ paths:
       summary: Get App Profile - Bulk
       tags:
       - Misc
-      operationId: Get App Profile - Bulk
+      operationId: A635852551475226245Get
       produces:
       - application/json
       parameters:
@@ -562,7 +562,7 @@ paths:
       summary: Get App Profile - Multiple
       tags:
       - Misc
-      operationId: Get App Profile - Multiple
+      operationId: A635840479228873065Delete
       produces:
       - application/json
       parameters:
