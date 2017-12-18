@@ -630,6 +630,25 @@ definitions:
     properties:
       Records:
         description: ''
+        example:
+        - customerId: 100077
+          Attributes:
+            fb_user_id: 1027581030637981
+            fb_conversation_id: t_mid.1453704265532:e9228e75c730b38079
+            status: 1
+            fbstatus: 1
+            fbcstatus: 1
+            verified: 1
+            access_token: CAAMRVlEvpz0BAGPrZAcxNJP6erVMODjWDI5zANTKuDXrKoJlzXH7hNcMkAqrCkPmLshmYfTO6ozpkEmGQeai3KEltbZBay3HygIBPhrj6qcojZBgD6qHROEJpz2taeeDs5DCGZCHPeVHRmIZCCWjP3BzeIVS7U81RdsHZAC0jbHQTDPu6j7Y1wJUj6pVRPhs4SnAdezGxAsQZDZD
+            access_token_expiry: 5168517
+            name: Vijay Akula
+            first_name: Vijay
+            middle_name: ''
+            last_name: Akula
+            gender: male
+            email: vijaykumar5c1@gmail.com
+            location: 102.0000,454.788
+            birthday: ''
         type: array
         items:
           $ref: '#/definitions/Record'
@@ -637,64 +656,132 @@ definitions:
     - Records
   Record:
     title: Record
+    example:
+      customerId: 100077
+      Attributes:
+        fb_user_id: 1027581030637981
+        fb_conversation_id: t_mid.1453704265532:e9228e75c730b38079
+        status: 1
+        fbstatus: 1
+        fbcstatus: 1
+        verified: 1
+        access_token: CAAMRVlEvpz0BAGPrZAcxNJP6erVMODjWDI5zANTKuDXrKoJlzXH7hNcMkAqrCkPmLshmYfTO6ozpkEmGQeai3KEltbZBay3HygIBPhrj6qcojZBgD6qHROEJpz2taeeDs5DCGZCHPeVHRmIZCCWjP3BzeIVS7U81RdsHZAC0jbHQTDPu6j7Y1wJUj6pVRPhs4SnAdezGxAsQZDZD
+        access_token_expiry: 5168517
+        name: Vijay Akula
+        first_name: Vijay
+        middle_name: ''
+        last_name: Akula
+        gender: male
+        email: vijaykumar5c1@gmail.com
+        location: 102.0000,454.788
+        birthday: ''
     type: object
     properties:
       customerId:
         description: ''
+        example: 100077
         type: string
       Attributes:
         $ref: '#/definitions/Attributes'
+        example:
+          fb_user_id: 1027581030637981
+          fb_conversation_id: t_mid.1453704265532:e9228e75c730b38079
+          status: 1
+          fbstatus: 1
+          fbcstatus: 1
+          verified: 1
+          access_token: CAAMRVlEvpz0BAGPrZAcxNJP6erVMODjWDI5zANTKuDXrKoJlzXH7hNcMkAqrCkPmLshmYfTO6ozpkEmGQeai3KEltbZBay3HygIBPhrj6qcojZBgD6qHROEJpz2taeeDs5DCGZCHPeVHRmIZCCWjP3BzeIVS7U81RdsHZAC0jbHQTDPu6j7Y1wJUj6pVRPhs4SnAdezGxAsQZDZD
+          access_token_expiry: 5168517
+          name: Vijay Akula
+          first_name: Vijay
+          middle_name: ''
+          last_name: Akula
+          gender: male
+          email: vijaykumar5c1@gmail.com
+          location: 102.0000,454.788
+          birthday: ''
     required:
     - customerId
     - Attributes
   Attributes:
     title: Attributes
+    example:
+      fb_user_id: 1027581030637981
+      fb_conversation_id: t_mid.1453704265532:e9228e75c730b38079
+      status: 1
+      fbstatus: 1
+      fbcstatus: 1
+      verified: 1
+      access_token: CAAMRVlEvpz0BAGPrZAcxNJP6erVMODjWDI5zANTKuDXrKoJlzXH7hNcMkAqrCkPmLshmYfTO6ozpkEmGQeai3KEltbZBay3HygIBPhrj6qcojZBgD6qHROEJpz2taeeDs5DCGZCHPeVHRmIZCCWjP3BzeIVS7U81RdsHZAC0jbHQTDPu6j7Y1wJUj6pVRPhs4SnAdezGxAsQZDZD
+      access_token_expiry: 5168517
+      name: Vijay Akula
+      first_name: Vijay
+      middle_name: ''
+      last_name: Akula
+      gender: male
+      email: vijaykumar5c1@gmail.com
+      location: 102.0000,454.788
+      birthday: ''
     type: object
     properties:
       fb_user_id:
         description: ''
+        example: 1027581030637981
         type: string
       fb_conversation_id:
         description: ''
+        example: t_mid.1453704265532:e9228e75c730b38079
         type: string
       status:
         description: ''
+        example: 1
         type: string
       fbstatus:
         description: ''
+        example: 1
         type: string
       fbcstatus:
         description: ''
+        example: 1
         type: string
       verified:
         description: ''
+        example: 1
         type: string
       access_token:
         description: ''
+        example: CAAMRVlEvpz0BAGPrZAcxNJP6erVMODjWDI5zANTKuDXrKoJlzXH7hNcMkAqrCkPmLshmYfTO6ozpkEmGQeai3KEltbZBay3HygIBPhrj6qcojZBgD6qHROEJpz2taeeDs5DCGZCHPeVHRmIZCCWjP3BzeIVS7U81RdsHZAC0jbHQTDPu6j7Y1wJUj6pVRPhs4SnAdezGxAsQZDZD
         type: string
       access_token_expiry:
         description: ''
+        example: 5168517
         type: string
       name:
         description: ''
+        example: Vijay Akula
         type: string
       first_name:
         description: ''
+        example: Vijay
         type: string
       middle_name:
         description: ''
         type: string
       last_name:
         description: ''
+        example: Akula
         type: string
       gender:
         description: ''
+        example: male
         type: string
       email:
         description: ''
+        example: vijaykumar5c1@gmail.com
         type: string
       location:
         description: ''
+        example: 102.0000,454.788
         type: string
       birthday:
         description: ''
@@ -742,6 +829,25 @@ definitions:
     properties:
       Records:
         description: ''
+        example:
+        - customerId: 100077
+          Attributes:
+            name: vijay akula
+            email: vijay.akula@imimobile.com
+            msisdn: 919676534531
+            city: Hyderabad
+            country: India
+            accountId: 100077
+            clientId: OHDevSanity
+        - customerId: 4
+          Attributes:
+            name: Mahesh Pavan
+            email: pavankumar.g@imimobile.com
+            msisdn: 919703553010
+            city: Hyderabad
+            country: India
+            accountId: 100077
+            clientId: OHDevSanity
         type: array
         items:
           $ref: '#/definitions/Record4'
@@ -749,40 +855,74 @@ definitions:
     - Records
   Record4:
     title: Record4
+    example:
+      customerId: 100077
+      Attributes:
+        name: vijay akula
+        email: vijay.akula@imimobile.com
+        msisdn: 919676534531
+        city: Hyderabad
+        country: India
+        accountId: 100077
+        clientId: OHDevSanity
     type: object
     properties:
       customerId:
         description: ''
+        example: 100077
         type: string
       Attributes:
         $ref: '#/definitions/Attributes5'
+        example:
+          name: vijay akula
+          email: vijay.akula@imimobile.com
+          msisdn: 919676534531
+          city: Hyderabad
+          country: India
+          accountId: 100077
+          clientId: OHDevSanity
     required:
     - customerId
     - Attributes
   Attributes5:
     title: Attributes5
+    example:
+      name: vijay akula
+      email: vijay.akula@imimobile.com
+      msisdn: 919676534531
+      city: Hyderabad
+      country: India
+      accountId: 100077
+      clientId: OHDevSanity
     type: object
     properties:
       name:
         description: ''
+        example: vijay akula
         type: string
       email:
         description: ''
+        example: vijay.akula@imimobile.com
         type: string
       msisdn:
         description: ''
+        example: 919676534531
         type: string
       city:
         description: ''
+        example: Hyderabad
         type: string
       country:
         description: ''
+        example: India
         type: string
       accountId:
         description: ''
+        example: 100077
         type: string
       clientId:
         description: ''
+        example: OHDevSanity
         type: string
     required:
     - name
@@ -810,6 +950,17 @@ definitions:
     properties:
       Records:
         description: ''
+        example:
+        - customerId: 100077
+          Attributes:
+            twitter_user_id: 357282265
+            status: 1
+            verified: 1
+            access_token: ''
+            access_tokensecret: ''
+            screenName: vijaykumar5c1
+            geolocation: ''
+            timezone: Hawaii
         type: array
         items:
           $ref: '#/definitions/Record7'
@@ -817,28 +968,61 @@ definitions:
     - Records
   Record7:
     title: Record7
+    example:
+      customerId: 100077
+      Attributes:
+        twitter_user_id: 357282265
+        status: 1
+        verified: 1
+        access_token: ''
+        access_tokensecret: ''
+        screenName: vijaykumar5c1
+        geolocation: ''
+        timezone: Hawaii
     type: object
     properties:
       customerId:
         description: ''
+        example: 100077
         type: string
       Attributes:
         $ref: '#/definitions/Attributes8'
+        example:
+          twitter_user_id: 357282265
+          status: 1
+          verified: 1
+          access_token: ''
+          access_tokensecret: ''
+          screenName: vijaykumar5c1
+          geolocation: ''
+          timezone: Hawaii
     required:
     - customerId
     - Attributes
   Attributes8:
     title: Attributes8
+    example:
+      twitter_user_id: 357282265
+      status: 1
+      verified: 1
+      access_token: ''
+      access_tokensecret: ''
+      screenName: vijaykumar5c1
+      geolocation: ''
+      timezone: Hawaii
     type: object
     properties:
       twitter_user_id:
         description: ''
+        example: 357282265
         type: string
       status:
         description: ''
+        example: 1
         type: string
       verified:
         description: ''
+        example: 1
         type: string
       access_token:
         description: ''
@@ -848,12 +1032,14 @@ definitions:
         type: string
       screenName:
         description: ''
+        example: vijaykumar5c1
         type: string
       geolocation:
         description: ''
         type: string
       timezone:
         description: ''
+        example: Hawaii
         type: string
     required:
     - twitter_user_id
